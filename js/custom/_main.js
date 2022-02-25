@@ -79,6 +79,7 @@ jQuery(document).ready(function() {
     readMore();
     customTabs();
     popupForm ();
+
 });
 
 jQuery(window).resize(function() {
@@ -91,6 +92,7 @@ jQuery(window).scroll(function() {
 "use strict";
     parallax_scroll();
 });
+
 
 function readMore() {
     var state = 0;
