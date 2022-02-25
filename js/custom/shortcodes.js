@@ -577,7 +577,6 @@ function trx_addons_admin_init() {
 	"use strict";
 
 	// Media selector
-	var TRX_ADDONS_STORAGE;
 	TRX_ADDONS_STORAGE['media_id'] = '';
 	TRX_ADDONS_STORAGE['media_frame'] = [];
 	TRX_ADDONS_STORAGE['media_link'] = [];
@@ -1327,7 +1326,8 @@ function trx_addons_init_sliders(e, container) {
 				"use strict";
 
 				// If slider inside the invisible block - exit
-			
+				if (jQuery(this).parents('div:hidden,article:hidden').length > 0)
+					return;
 				
 				// Check attr id for slider. If not exists - generate it
 				var slider = jQuery(this);

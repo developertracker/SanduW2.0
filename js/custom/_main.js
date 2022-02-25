@@ -94,6 +94,7 @@ jQuery(window).scroll(function() {
 });
 
 
+
 function readMore() {
     var state = 0;
     $('.sc_button_readmore').click(function(e){
