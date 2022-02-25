@@ -577,6 +577,7 @@ function trx_addons_admin_init() {
 	"use strict";
 
 	// Media selector
+	var TRX_ADDONS_STORAGE;
 	TRX_ADDONS_STORAGE['media_id'] = '';
 	TRX_ADDONS_STORAGE['media_frame'] = [];
 	TRX_ADDONS_STORAGE['media_link'] = [];
