@@ -577,10 +577,7 @@ function trx_addons_admin_init() {
 	"use strict";
 
 	// Media selector
-	var TRX_ADDONS_STORAGE;
-	TRX_ADDONS_STORAGE['media_id'] = [];
-	TRX_ADDONS_STORAGE['media_frame'] = [];
-	TRX_ADDONS_STORAGE['media_link'] = [];
+
 	jQuery('.widget-liquid-right,.widgets-holder-wrap,.form-field,.trx_addons_options_item_field').on('click', '.trx_addons_media_selector', function(e) {
 		trx_addons_show_media_manager(this);
 		e.preventDefault();
